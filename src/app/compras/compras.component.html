@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+</head>
+<body>
+
+  <h1 class="titulo">
+    Fotografias disponíveis para venda
+</h1>
+
+<label>
+  Exemplo das fotografias disponíveis
+</label>
+<br>
+<div class="exemplos">
+<img src="../../assets/img/Capa.JPG" width="190px" alt= "Lua Cheia">
+
+<img src="../../assets/img/Cheia2.JPG" width="190px" alt= "Lua Cheia">
+
+<img src="../../assets/img/meialua.JPG" width="190x" alt= "Meia Lua">
+
+<img src="../../assets/img/gato1.JPG" width="190px" alt= "Gato">
+
+<img src="../../assets/img/passarinho1.JPG" width="190px" alt= "Passarinho">
+
+<img src="../../assets/img/tuc.JPG" width="190px" alt= "Tucano">
+
+<img src="../../assets/img/canarinho.JPG" width="190px" alt= "Canarinho">
+
+</div>
+
+<br>
+<label>
+      Lista de fotografias separadas por categorias:
+</label>
+<br>
+<button mat-button [matMenuTriggerFor]="fasesdalua" aria-label="luas">Fases da Lua</button>
+          <mat-menu #luas="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="fasesdalua">Fotografias</button>
+
+          </mat-menu>
+
+
+          <mat-menu #fasesdalua="matMenu">
+            <button mat-menu-item>Nova</button>
+            <button mat-menu-item>Crescente</button>
+            <button mat-menu-item>Cheia</button>
+            <button mat-menu-item>Minguante</button>
+          </mat-menu>
+
+<button mat-button [matMenuTriggerFor]="passarinhos" aria-label="tiposdepassarinhos">Passarinhos</button>
+          <mat-menu #tiposdepassarinhos="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="passarinhos">Fotografias</button>
+
+          </mat-menu>
+
+
+          <mat-menu #passarinhos="matMenu">
+            <button mat-menu-item>Bemtevi</button>
+            <button mat-menu-item>Canarinho</button>
+            <button mat-menu-item>João de barro</button>
+            <button mat-menu-item>Andorinha</button>
+          </mat-menu>
+
+<button mat-button [matMenuTriggerFor]="pets" aria-label="animais">Pets</button>
+          <mat-menu #animais="matMenu">
+            <button mat-menu-item [matMenuTriggerFor]="pets">Fotografias</button>
+
+          </mat-menu>
+
+
+          <mat-menu #pets="matMenu">
+            <button mat-menu-item>Gato</button>
+            <button mat-menu-item>Cachorro</button>
+
+          </mat-menu>
+<br>
+
+
+
+
+</body>,
+
+
+</html>

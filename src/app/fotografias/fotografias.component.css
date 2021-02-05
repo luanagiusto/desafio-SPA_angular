@@ -1,0 +1,12 @@
+.titulo {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: rgb(250, 248, 249);
+    text-align: center;
+    padding: 10px;
+  }
+
+  p {
+      font-size: 20px;
+      color: rgb(10, 0, 0);
+  }
+
