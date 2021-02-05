@@ -1,27 +1,37 @@
-# Spaangulardesafio
+# Desafio SPA angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+Este projeto foi gerado com Angular CLI versão 11.0.4. 
 
-## Development server
+Componentes criados:
+<ol>
+Home<br>
+Fotografias<br>
+Compras<br>
+</ol>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Componentes Angular utilizados] (https://material.angular.io/components/categories):<br>
+<ol>
+  Checkbox <br>
+ Toolbar<br>
+ Icon<br>
+ Button<br>
+ Table<br>
+ Menu<br>
+  </ol>
 
-## Code scaffolding
+Explicação:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Esta foi minha primeira aplicação SPA com angular. Ela contém 3 componentes que interagem entre si por meio de interpolação e/ou Property Biding. 
+O botão "mudar valor" é capaz de acrescentar 1 ao valor apresentado em "Quantidade de fotografias", que é inicializado como zero, enquanto o botão "Reiniciar", reinicia a contagem.
 
-## Build
+"Exibir Tabela" traz uma tabela composta por Código, categoria e nome das fotografias, bem como uma checkbox para selecionar. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Uma lista de fotografias separadas por categorias (as mesmas apresentadas na tabela) mostram em cascata uma busca. 
 
-## Running unit tests
+Próximas etapas:
+1) Vincular um botão para interagir a quantidade de fotos selecionadas no checkbox ao valor apresentado na "Quantidade de fotografias".
+2) Mostrar a fotografia ao selecionar um tipo de imagem nas categorias.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Vídeo de como ficou:
+https://user-images.githubusercontent.com/73751801/107058296-33c09c80-67b3-11eb-87a0-74080c6a4430.mp4
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
